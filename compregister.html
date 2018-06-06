@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>REGISTRATION PANEL STUDENT ACADEMY</title>
+    </head>
+    <body>
+       
+
+        
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+ <!-- menu begins-->
+  <link href="css/menu.css" rel="stylesheet" type="text/css" />
+
+
+<script language="javascript">
+    function check()
+    {
+        var emailRegex =/^[A-Za-z0-9._]*\@[A-Za-z]*\.[A-Za-z]{2,5}$/;
+        //var numericExpression = /^[0-9]{10}$/;
+
+        var cname=document.form.name.value;
+        var cpassword=document.form.pass.value;
+        var cmobile=document.form.mobile.value;
+        //var cinternship=document.form.internship.value;
+       // var cdescription=document.form.description.value;
+        
+        if(cname=="")
+        {
+            alert("please enter Company name");
+            document.form.name.focus();
+            return false;
+        }
+        
+        else if(cpassword=="")
+        {
+            alert("please enter password");
+            document.form.pass.focus();
+            return false;
+        }
+        else if(cmobile=="")
+        {
+            alert("please enter Posts Required");
+            document.form.mobile.focus();
+            return false;
+        }
+        
+        return true;
+    }
+</script>
+
+
+<!-- container begins-->
+ <div class="container">
+   <!-- header begins-->
+     <div class="header">
+        <div class="head">
+           <!-- head left begins-->
+             <div class="headleft">
+                <a href="index.html" style="height:auto;width:auto;margin-left:-60px;"><img src="images/slider/logo3.png" /></a>
+             </div>
+           <!-- head left ends-->
+          
+          <!-- head right begins-->
+          <div class="headright">
+          <!-- head top begins-->
+           <div class="headtop">
+               <!-- contact begins-->
+               
+             <!-- contact ends-->
+            <!-- contact begins-->
+           <div class="contact">
+                <a href="login.html"><img src="images/login.png" /></a>
+              <a href="login.html"> <p>Login</p></a> 
+          </div>
+         <!-- contact ends-->
+        </div>
+      <!-- head top ends-->
+      <!-- head bottom begins-->
+        <div class="headbottom">
+           <!-- menu begins-->
+            <div class="menu">
+               <ul id="nav">
+                   <li><a href="index.html">HOME</a></li>
+               <li><a href="login.html">LOGIN PANEL</a></li>
+        </ul> 
+        </div>
+      <!-- menu ends-->
+        </div>
+      <!-- head bottom ends-->
+          </div>
+         <!-- head right ends-->
+         <div class="clear"></div>
+        </div>
+     </div>
+   <!-- header ends-->
+    <!-- content begins-->
+    <div class="content">
+      <h1 id="about">Company Registration</h1><div class="clear"></div><hr class="hr1" />
+      <!-- login left begins-->
+      <div class="loginleft">
+    
+      <!-- registration box begins-->
+           <div class="registrationbox">
+            
+              <p><b>Company Information:</b></p>
+               <form action="compregister.jsp" method="post" name="form">
+                 <span>Company Name: </span><input type="text" name="name" /><div class="clear"></div>
+                 <span>Password : </span><input type="password" name="pass" /> <div class="clear"></div>
+                 <span>Posts : </span><input type="text" name="mobile"  /><div class="clear"></div>
+                 
+                 
+                 
+                 <span>&nbsp;</span><input type="submit" name="submit" value="Submit"  onclick="return check();"/>
+                 <input type="reset" name="clear" value="Clear" />
+                 
+                                        
+          </form>
+             
+           </div>
+         <!-- registration  box ends-->
+     </div>
+    <!-- login left ends-->
+    <!-- login right begins-->
+     <div class="loginright">
+      <img src="images/register.jpg" />
+     </div>
+    <!-- login right ends-->
+   <div class="clear"></div>
+    </div>
+     <!-- content ends-->
+    <!-- footer begins-->
+        <div class="footer">
+          <div class="foot">
+               
+          <div class="sharebox">
+          <h1>Share With Us</h1>
+         <a href="#"> <img src="images/facebook.png" /></a>
+          <a href="#"> <img src="images/twitter.png" /></a>
+         <a href="#"> <img src="images/linkedin.png" /></a>
+          </div>
+        <!-- share box ends-->
+          </div>
+          <div class="clear"></div>
+        </div>
+     <!-- footer ends-->
+      <div class="clear"></div>
+   </div>
+<!-- container ends-->
+
+</body>
+
+
+    
+</html>
